@@ -1,0 +1,35 @@
+body{
+ background: #0aa3ff;
+}
+
+ .wrapper{
+  position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+padding: 15px;
+background: white;
+border: 6px solid #3ec0ff;
+box-shadow: 0px 9px 10px -2px #2f84ac;
+border: 6px solid #316680;
+   animation: float .5s infinite alternate ease-in-out;
+   transition: .3s;
+}
+.title{
+  color: #0aa3ff;
+font-weight: bold;
+font-family: Ubuntu;
+font-size: 34px;
+font-family: Roboto;
+}
+
+@keyframes float{
+  0%{
+    box-shadow: 0px 9px 10px -2px #0a1a22a8;
+    transform: translate(-50%,-50%);
+  }
+  100%{
+    box-shadow: 10px 19px 10px -2px #0c1c246b;
+    transform: translate(-50%,-65%);
+  }
+}
